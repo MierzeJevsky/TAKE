@@ -1,65 +1,69 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package view.backing;
 
 /**
  *
- * @author student
+ * @author Mierzej
  */
-public class Student {
-    private String imie;
-    private String nazwisko;
-    private double srednia;
+public class Student
+{
+    private String name;
+    private String surname;
+    private double average;
 
-    Student(String imie, String nazwisko, double srednia) {
-        this.imie = imie;
-        this.nazwisko = nazwisko;
-        this.srednia = srednia;
+    public Student(String name, String surname, double average)
+    {   
+        this.name=name;
+        this.surname=surname;
+        this.average=average;
     }
     
     /**
-     * @return the imie
+     * @return the name
      */
-    public String getImie() {
-        return imie;
+    public String getName()
+    {
+        return name;
     }
 
     /**
-     * @param imie the imie to set
+     * @param name the name to set
      */
-    public void setImie(String imie) {
-        this.imie = imie;
-    }
-
-    /**
-     * @return the nazwisko
-     */
-    public String getNazwisko() {
-        return nazwisko;
-    }
-
-    /**
-     * @param nazwisko the nazwisko to set
-     */
-    public void setNazwisko(String nazwisko) {
-        this.nazwisko = nazwisko;
-    }
-
-    /**
-     * @return the srednia
-     */
-    public double getSrednia() {
-        return srednia;
-    }
-
-    /**
-     * @param srednia the srednia to set
-     */
-    public void setSrednia(double srednia) {
-        this.srednia = srednia;
+    public void setName(String name)
+    {
+        this.name = name;
     }
     
+    /**
+     * @return the surname
+     */
+    public String getSurname()
+    {
+        return surname;
+    }
+
+    /**
+     * @param surname the surname to set
+     */
+    public void setSurname(String surname)
+    {
+        this.surname = surname;
+    }
+
+
+    /**
+     * @return the average
+     */
+    public double getAverage()
+    {
+        return average;
+    }
+
+    /**
+     * @param average the average to set
+     */
+    public void setAverage(float average)
+    {
+        this.average = average;
+    }
     
 }
