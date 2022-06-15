@@ -7,10 +7,7 @@ import lab.bookings.repositiores.BookingRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.time.LocalDate;
@@ -58,6 +55,11 @@ public class BookingController {
             }
         }
         return view;
+    }
+    @RequestMapping(value = "delete", method = RequestMethod.POST)
+    private String delete(@RequestParam long id){
+        bookingRepository.deleteById(id);
+        return "redirect:/bookings";
     }
 
     

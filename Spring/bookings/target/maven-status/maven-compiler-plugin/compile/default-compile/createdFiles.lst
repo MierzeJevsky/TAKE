@@ -1,0 +1,8 @@
+lab\bookings\controllers\ApartmentController.class
+lab\bookings\repositiores\ApartmentRepository.class
+lab\bookings\repositiores\BookingRepository.class
+lab\bookings\controllers\IndexController.class
+lab\bookings\BookingsApplication.class
+lab\bookings\models\Booking.class
+lab\bookings\controllers\BookingController.class
+lab\bookings\models\Apartment.class
