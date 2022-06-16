@@ -15,6 +15,7 @@ import org.json.JSONObject;
 
 public class ComplaintsClient {
 
+    public static void main(String[] args) {
     Client client = ClientBuilder.newClient();
     String count = client.target("http://localhost:8080/Complaints/resources/complaints/count")
             .request(MediaType.TEXT_PLAIN)
