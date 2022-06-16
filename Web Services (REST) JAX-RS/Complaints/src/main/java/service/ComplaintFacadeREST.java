@@ -21,10 +21,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-/**
- *
- * @author osakk
- */
 @Stateless
 @Path("complaints")
 public class ComplaintFacadeREST extends AbstractFacade<Complaint> {
@@ -39,7 +35,7 @@ public class ComplaintFacadeREST extends AbstractFacade<Complaint> {
     @GET
     @Path("{id}/status")
     @Produces(MediaType.TEXT_PLAIN)
-    public String checkStatus(Long id) {
+    public String checkStatus(@PathParam("id") Long id) {
         return super.find(id).getStatus();
     }
 
