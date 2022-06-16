@@ -14,7 +14,6 @@ namespace CompanyApi.Controllers
     public class EmployeesController : ControllerBase
     {
         private readonly CompanyDbContext _context;
-
         public EmployeesController(CompanyDbContext context)
         {
             _context = context;
